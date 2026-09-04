@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Publications by Muhammad Amir — Articles on Technology, Ethics, Privacy, and Software Engineering."
+    />
+    <title>Publications | Muhammad Amir</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../assets/css/variables.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../assets/css/publications.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="../index.html" class="navbar-logo">
+          <div class="logo-icon">M</div>
+          <div class="logo-text">
+            <div class="logo-name">Muhammad Amir</div>
+            <div class="logo-title">Full-Stack Software Engineer</div>
+          </div>
+        </a>
+        <nav>
+          <ul class="navbar-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-actions">
+          <a href="contact.html" class="btn btn-primary btn-sm"> Contact Me </a>
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Contact Me</a>
+      </div>
+    </header>
+
+    <main style="padding-top: 72px">
+      <!-- ═══════════ PAGE HERO ═══════════ -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="label label--white animate">Insights & Articles</span>
+          <h1 class="animate delay-1">Tech, Ethics & Architecture</h1>
+          <p class="animate delay-2">
+            Discussions on technology ethics, digital privacy, and deep dives
+            into MERN stack and AI engineering case studies.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════ BLOG CONTENT ═══════════ -->
+      <section class="section">
+        <div class="container">
+          <!-- Filter Bar -->
+          <div class="filter-bar reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ethics">Tech Ethics</button>
+            <button class="filter-btn" data-filter="privacy">
+              Digital Privacy
+            </button>
+            <button class="filter-btn" data-filter="engineering">
+              Software Engineering
+            </button>
+            <button class="filter-btn" data-filter="ai">AI Integrations</button>
+          </div>
+
+          <!-- Featured Post + Side Stack -->
+          <div class="blog-featured reveal">
+            <!-- Main featured post -->
+            <div class="card blog-card" data-category="ethics">
+              <div class="blog-card-img">⚖️</div>
+              <div class="blog-card-body">
+                <div class="blog-category">Tech Ethics</div>
+                <h2>
+                  Ethics, Technology, and Society: An In-Depth Discussion with a
+                  Technology Professional
+                </h2>
+                <p class="blog-excerpt">
+                  Exploring the complex intersection of moral responsibility and
+                  rapid technological advancement in modern software
+                  development. Published on Medium.
+                </p>
+                <div class="blog-meta">
+                  <span>M. Amir</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Published on Medium</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Article</span>
+                  <a href="#" class="read-more">Read →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Side stack -->
+            <div class="blog-side-stack">
+              <div class="card blog-card" data-category="privacy">
+                <div class="blog-card-img small">👁️</div>
+                <div class="blog-card-body">
+                  <div class="blog-category">Digital Privacy</div>
+                  <h3>
+                    Privacy: The Art of Being Unseen in a World That Craves
+                    Visibility
+                  </h3>
+                  <p class="blog-excerpt">
+                    An analysis of modern data tracking and the importance of
+                    digital anonymity. Published on Medium.
+                  </p>
+                  <div class="blog-meta">
+                    <span>M. Amir</span>
+                    <span class="blog-meta-dot">·</span>
+                    <span>Article</span>
+                    <a href="#" class="read-more">Read →</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card blog-card" data-category="privacy">
+                <div class="blog-card-img small">🪙</div>
+                <div class="blog-card-body">
+                  <div class="blog-category">Digital Privacy</div>
+                  <h3>Privacy: The Silent Currency of the Digital Age</h3>
+                  <p class="blog-excerpt">
+                    How personal data has become the most valuable commodity in
+                    technology, and how developers must protect it. Published on
+                    Medium.
+                  </p>
+                  <div class="blog-meta">
+                    <span>M. Amir</span>
+                    <span class="blog-meta-dot">·</span>
+                    <span>Article</span>
+                    <a href="#" class="read-more">Read →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter Strip -->
+          <div class="blog-newsletter reveal">
+            <div class="blog-newsletter-text">
+              <h3>Get Tech Insights in Your Inbox</h3>
+              <p>
+                Join other developers reading my thoughts on MERN, AI, and
+                system architecture.
+              </p>
+            </div>
+            <div class="blog-newsletter-form">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="your@email.com"
+              />
+              <a href="#" class="btn btn-white">Subscribe</a>
+            </div>
+          </div>
+
+          <!-- Blog Grid -->
+          <div class="blog-grid" id="blogGrid">
+            <div class="card blog-card reveal" data-category="ethics">
+              <div class="blog-card-img">🕵️</div>
+              <div class="blog-card-body">
+                <div class="blog-category">Tech Ethics</div>
+                <h3>The Hidden Menace: What the Vlog Revealed</h3>
+                <p class="blog-excerpt">
+                  A critical look at content creation, data exposure, and the
+                  unseen risks of public broadcasting. Published on Medium.
+                </p>
+                <div class="blog-meta">
+                  <span>M. Amir</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Published on Medium</span>
+                  <a href="#" class="read-more">Read →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card blog-card reveal" data-category="engineering">
+              <div class="blog-card-img">📚</div>
+              <div class="blog-card-body">
+                <div class="blog-category">Software Engineering</div>
+                <h3>Case Study: Architecting MDCAT LMS with MERN</h3>
+                <p class="blog-excerpt">
+                  A technical breakdown of building a scalable,
+                  subscription-based EdTech platform with role-based access
+                  control.
+                </p>
+                <div class="blog-meta">
+                  <span>M. Amir</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Tech Case Study</span>
+                  <a href="projects.html" class="read-more">View →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card blog-card reveal" data-category="ai">
+              <div class="blog-card-img">🤖</div>
+              <div class="blog-card-body">
+                <div class="blog-category">AI Integrations</div>
+                <h3>Integrating Google Gemini & PyPDF2 in Nominate AI</h3>
+                <p class="blog-excerpt">
+                  How I built an NLP-based resume parsing pipeline and automated
+                  job description generation using modern AI endpoints.
+                </p>
+                <div class="blog-meta">
+                  <span>M. Amir</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Tech Case Study</span>
+                  <a href="projects.html" class="read-more">View →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card blog-card reveal" data-category="engineering">
+              <div class="blog-card-img">🛒</div>
+              <div class="blog-card-body">
+                <div class="blog-category">Software Engineering</div>
+                <h3>Building a Secure AI E-Commerce Platform</h3>
+                <p class="blog-excerpt">
+                  Combining Node.js backend robustness with a decoupled FastAPI
+                  microservice for FAISS vector search.
+                </p>
+                <div class="blog-meta">
+                  <span>M. Amir</span>
+                  <span class="blog-meta-dot">·</span>
+                  <span>Tech Case Study</span>
+                  <a href="projects.html" class="read-more">View →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination reveal">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">→</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════ WHATSAPP + FOOTER ═══════════ -->
+    <a
+      href="https://wa.me/923006575463"
+      target="_blank"
+      class="whatsapp-float"
+      title="Chat on WhatsApp"
+    >
+      💬
+      <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="navbar-logo">
+              <div class="logo-icon">M</div>
+              <div class="logo-text">
+                <div class="logo-name">Muhammad Amir</div>
+                <div class="logo-title">Full-Stack Software Engineer</div>
+              </div>
+            </a>
+            <p>
+              Results-driven MERN stack developer specializing in designing,
+              developing, and deploying secure, production-grade web
+              applications and AI tools.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://github.com/MAmirLatif"
+                target="_blank"
+                class="social-icon"
+                title="GitHub"
+                >gh</a
+              >
+              <a
+                href="https://linkedin.com/in/muhammad-amir-dev"
+                target="_blank"
+                class="social-icon"
+                title="LinkedIn"
+                >in</a
+              >
+              <a
+                href="https://wa.me/923006575463"
+                class="social-icon"
+                title="WhatsApp"
+                >💬</a
+              >
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Key Projects</h5>
+            <ul>
+              <li><a href="projects.html">MDCAT LMS</a></li>
+              <li><a href="projects.html">YouTube Rewards Platform</a></li>
+              <li><a href="projects.html">AI E-Commerce</a></li>
+              <li><a href="projects.html">Nominate AI System</a></li>
+              <li><a href="projects.html">Degree Recommendation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li>
+                <a href="mailto:amirlatif2288@gmail.com"
+                  >amirlatif2288@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://wa.me/923006575463"
+                  >WhatsApp: +92 300 657 5463</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/MAmirLatif" target="_blank"
+                  >GitHub: MAmirLatif</a
+                >
+              </li>
+              <li><a href="#">Based in Kasur, Pakistan 🇵🇰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Muhammad Amir. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="https://linkedin.com/in/muhammad-amir-dev" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/MAmirLatif" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../assets/js/main.js"></script>
+    <script>
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          // Update active button
+          document
+            .querySelectorAll('.filter-btn')
+            .forEach((b) => b.classList.remove('active'))
+          btn.classList.add('active')
+
+          const filter = btn.getAttribute('data-filter')
+          document
+            .querySelectorAll('#blogGrid .blog-card, .blog-featured .blog-card')
+            .forEach((card) => {
+              const category = card.getAttribute('data-category')
+              if (filter === 'all' || category === filter) {
+                card.style.display = 'flex' // Or block depending on original css, flex usually works well with these cards
+              } else {
+                card.style.display = 'none'
+              }
+            })
+        })
+      })
+
+      // Pagination buttons
+      document.querySelectorAll('.page-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document
+            .querySelectorAll('.page-btn')
+            .forEach((b) => b.classList.remove('active'))
+          if (btn.textContent !== '→') btn.classList.add('active')
+        })
+      })
+    </script>
+  </body>
+</html>

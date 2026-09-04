@@ -296,22 +296,7 @@
   color: var(--text);
 }
 .credential-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--blue-dark);
-  color: var(--white);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 700;
-  flex-shrink: 0;
-  font-size: 0;
-}
-.credential-icon::before {
-  content: '•';
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /* ─── SERVICES PREVIEW ────────────────────────────────────── */

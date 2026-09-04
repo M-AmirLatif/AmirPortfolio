@@ -1,1 +1,360 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Contact Muhammad Amir, Full-Stack Software Engineer." /><title>Contact | Muhammad Amir</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../assets/css/variables.css" /><link rel="stylesheet" href="../assets/css/base.css" /><link rel="stylesheet" href="../assets/css/components.css" /><link rel="stylesheet" href="../assets/css/navbar.css" /><link rel="stylesheet" href="../assets/css/footer.css" /><link rel="stylesheet" href="../assets/css/contact.css" /></head><body><header class="navbar"><div class="navbar-inner"><a href="../index.html" class="navbar-logo"><div class="logo-icon">M</div><div class="logo-text"><div class="logo-name">Muhammad Amir</div><div class="logo-title">Full-Stack Software Engineer</div></div></a><nav><ul class="navbar-links"><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Skills</a></li><li><a href="youtube.html">Projects</a></li><li><a href="blog.html">Publications</a></li><li><a href="contact.html" class="active">Contact</a></li></ul></nav><div class="navbar-actions"><a href="mailto:amirlatif2288@gmail.com" class="btn btn-primary btn-sm">Email Me</a><button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button></div></div><div class="mobile-menu"><a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html">Skills</a><a href="youtube.html">Projects</a><a href="blog.html">Publications</a><a href="contact.html">Contact</a></div></header><main style="padding-top:72px"><section class="page-hero"><div class="container"><span class="label label--white animate">Get In Touch</span><h1 class="animate delay-1">Let's Connect</h1><p class="animate delay-2">I am open to conversations about full-stack engineering, software projects, and collaboration.</p></div></section><section class="section"><div class="container"><div class="contact-layout"><div class="contact-info"><div class="contact-intro reveal"><span class="label">Contact Info</span><h2>Muhammad Amir</h2><p>Full-Stack Software Engineer based in Kasur, Pakistan.</p></div><div class="info-card reveal"><div class="info-icon">@</div><div><div class="info-title">Email</div><div class="info-value">amirlatif2288@gmail.com</div><div class="info-sub">Primary contact</div></div></div><div class="info-card reveal"><div class="info-icon">+</div><div><div class="info-title">Phone</div><div class="info-value">+92 300 657 5463</div><div class="info-sub">Pakistan</div></div></div><div class="info-card reveal"><div class="info-icon">in</div><div><div class="info-title">LinkedIn</div><div class="info-value">muhammad-amir-dev</div><div class="info-sub">Professional profile</div></div></div><div class="contact-socials reveal"><h4>Find Me Online</h4><div class="social-row"><a href="https://linkedin.com/in/muhammad-amir-dev" class="social-btn">in LinkedIn</a><a href="https://github.com/MAmirLatif" class="social-btn">gh GitHub</a></div></div></div><div class="contact-form-card reveal"><h3>Send a Message</h3><p class="form-sub">Share a little about your project or opportunity.</p><div class="form-row"><div class="form-group"><label>First Name</label><input type="text" class="form-control" placeholder="Your first name" id="firstName" /></div><div class="form-group"><label>Last Name</label><input type="text" class="form-control" placeholder="Your last name" id="lastName" /></div></div><div class="form-group"><label>Email Address</label><input type="email" class="form-control" placeholder="you@email.com" id="email" /></div><div class="form-group"><label>I'm interested in...</label><select class="form-control" id="service"><option value="">Select a topic</option><option>Full-Stack Development</option><option>MERN Stack Project</option><option>Python or AI/ML Project</option><option>Collaboration</option><option>Other</option></select></div><div class="form-group"><label>Message</label><textarea class="form-control" id="message" placeholder="Tell me about your project or opportunity..."></textarea></div><button class="submit-btn" id="submitBtn" onclick="handleSubmit()">Send Message →</button><div class="success-msg" id="successMsg">✓ Message sent.</div></div></div></div></section></main><script src="../assets/js/main.js"></script><script src="../assets/js/contact.js"></script><script>function handleSubmit(){const first=document.getElementById('firstName').value,email=document.getElementById('email').value,service=document.getElementById('service').value,message=document.getElementById('message').value;if(!first||!email||!service||!message){alert('Please fill in all required fields.');return}document.getElementById('successMsg').classList.add('show');document.getElementById('submitBtn').disabled=true;document.getElementById('submitBtn').textContent='✓ Sent!'}</script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Dr. Syed Noman Amjad — Book a consultation or send a message."
+    />
+    <title>Contact | Dr. Syed Noman Amjad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/variables.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="../index.html" class="navbar-logo">
+          <div class="logo-icon">N</div>
+          <div class="logo-text">
+            <div class="logo-name">Dr. Syed Noman</div>
+            <div class="logo-title">Medical Educator · USMLE Mentor</div>
+          </div>
+        </a>
+        <nav>
+          <ul class="navbar-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="youtube.html">YouTube</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-actions">
+          <a href="contact.html" class="btn btn-primary btn-sm">
+            Book Consultation
+          </a>
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="youtube.html">YouTube</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+      </div>
+    </header>
+
+    <main style="padding-top: 72px">
+      <!-- ═══════════ PAGE HERO ═══════════ -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="label label--white animate">Get In Touch</span>
+          <h1 class="animate delay-1">Let's Connect</h1>
+          <p class="animate delay-2">
+            Ready to start your journey? Have a question? I'd love to hear from
+            you. I typically respond within 24 hours.
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══════════ CONTACT MAIN ═══════════ -->
+      <section class="section">
+        <div class="container">
+          <div class="contact-layout">
+            <!-- ── Info Side ── -->
+            <div class="contact-info">
+              <div class="contact-intro reveal">
+                <span class="label">Contact Info</span>
+                <h2>Here to Help You</h2>
+                <p>
+                  Fill in the form or reach out directly via WhatsApp or email.
+                  I personally read and reply to every message.
+                </p>
+              </div>
+
+              <div class="info-card reveal">
+                <div class="info-icon">✉️</div>
+                <div>
+                  <div class="info-title">Email</div>
+                  <div class="info-value">dr.noman@example.com</div>
+                  <div class="info-sub">Replies within 24 hours</div>
+                </div>
+              </div>
+
+              <div class="info-card reveal">
+                <div class="info-icon">💬</div>
+                <div>
+                  <div class="info-title">WhatsApp</div>
+                  <div class="info-value">+92 300 123 4567</div>
+                  <div class="info-sub">Fastest way to reach me</div>
+                </div>
+              </div>
+
+              <div class="info-card reveal">
+                <div class="info-icon">▶</div>
+                <div>
+                  <div class="info-title">YouTube</div>
+                  <div class="info-value">@DrNomanMD</div>
+                  <div class="info-sub">New videos every week</div>
+                </div>
+              </div>
+
+              <div class="info-card reveal">
+                <div class="info-icon">📅</div>
+                <div>
+                  <div class="info-title">Consultation Hours</div>
+                  <div class="info-value">Mon – Fri, 6PM – 10PM PKT</div>
+                  <div class="info-sub">Weekend slots on request</div>
+                </div>
+              </div>
+
+              <div class="contact-socials reveal">
+                <h4>Follow Along</h4>
+                <div class="social-row">
+                  <a href="#" class="social-btn">▶ YouTube</a>
+                  <a href="#" class="social-btn">ig Instagram</a>
+                  <a href="#" class="social-btn">in LinkedIn</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Form Side ── -->
+            <div class="contact-form-card reveal">
+              <h3>Send a Message</h3>
+              <p class="form-sub">
+                Tell me about your situation and I'll get back to you within 24
+                hours.
+              </p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ahmad"
+                    id="firstName"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Khan"
+                    id="lastName"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="you@email.com"
+                  id="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>WhatsApp Number (optional)</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="+92 300 000 0000"
+                  id="phone"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>I'm interested in...</label>
+                <select class="form-control" id="service">
+                  <option value="">Select a service</option>
+                  <option>USMLE 1-on-1 Mentoring</option>
+                  <option>Custom Study Plan</option>
+                  <option>Group Webinar</option>
+                  <option>Resource Consulting</option>
+                  <option>Free Discovery Call</option>
+                  <option>Other / General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Tell me about your exam timeline, current stage, and how I can help..."
+                ></textarea>
+              </div>
+
+              <button
+                class="submit-btn"
+                id="submitBtn"
+                onclick="handleSubmit()"
+              >
+                Send Message →
+              </button>
+
+              <div class="success-msg" id="successMsg">
+                ✓ Message sent! I'll get back to you within 24 hours.
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Availability Strip ── -->
+          <div class="availability-strip reveal">
+            <span class="label">Availability</span>
+            <h3>Consultation Schedule</h3>
+            <div class="availability-grid">
+              <div class="avail-card">
+                <div class="avail-day">Monday – Wednesday</div>
+                <div class="avail-time">6PM – 10PM PKT</div>
+                <span class="avail-badge avail-open">Open</span>
+              </div>
+              <div class="avail-card">
+                <div class="avail-day">Thursday – Friday</div>
+                <div class="avail-time">7PM – 10PM PKT</div>
+                <span class="avail-badge avail-open">Open</span>
+              </div>
+              <div class="avail-card">
+                <div class="avail-day">Saturday</div>
+                <div class="avail-time">By Request</div>
+                <span class="avail-badge avail-request">On Request</span>
+              </div>
+              <div class="avail-card">
+                <div class="avail-day">Sunday</div>
+                <div class="avail-time">Unavailable</div>
+                <span class="avail-badge avail-closed">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════ WHATSAPP + FOOTER ═══════════ -->
+    <a
+      href="https://wa.me/923001234567"
+      target="_blank"
+      class="whatsapp-float"
+      title="Chat on WhatsApp"
+    >
+      💬
+      <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="../index.html" class="navbar-logo">
+              <div class="logo-icon">N</div>
+              <div class="logo-text">
+                <div class="logo-name">Dr. Syed Noman</div>
+                <div class="logo-title">Medical Educator · USMLE Mentor</div>
+              </div>
+            </a>
+            <p>
+              Helping Pakistani medical & pre-med students navigate USMLE, build
+              strong foundations, and unlock their medical career — one step at
+              a time.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-icon">▶</a>
+              <a href="#" class="social-icon">ig</a>
+              <a href="#" class="social-icon">in</a>
+              <a href="https://wa.me/923001234567" class="social-icon">💬</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="youtube.html">YouTube</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="services.html">USMLE Mentoring</a></li>
+              <li><a href="services.html">Custom Study Plans</a></li>
+              <li><a href="services.html">Group Webinars</a></li>
+              <li><a href="services.html">Resource Consulting</a></li>
+              <li><a href="services.html">Free Discovery Call</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <ul>
+              <li>
+                <a href="mailto:dr.noman@example.com">dr.noman@example.com</a>
+              </li>
+              <li>
+                <a href="https://wa.me/923001234567"
+                  >WhatsApp: +92 300 123 4567</a
+                >
+              </li>
+              <li><a href="#">YouTube: @DrNomanMD</a></li>
+              <li><a href="#">Based in Pakistan 🇵🇰</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Dr. Syed Noman Amjad. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function handleSubmit() {
+        const first = document.getElementById('firstName').value
+        const email = document.getElementById('email').value
+        const service = document.getElementById('service').value
+        const message = document.getElementById('message').value
+
+        if (!first || !email || !service || !message) {
+          alert('Please fill in all required fields.')
+          return
+        }
+        const msg = document.getElementById('successMsg')
+        msg.classList.add('show')
+        document.getElementById('submitBtn').disabled = true
+        document.getElementById('submitBtn').textContent = '✓ Sent!'
+        setTimeout(() => {
+          msg.classList.remove('show')
+        }, 6000)
+      }
+    </script>
+  </body>
+</html>
