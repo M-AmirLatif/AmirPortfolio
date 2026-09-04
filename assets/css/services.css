@@ -1,0 +1,313 @@
+/* ============================================================
+   SERVICES PAGE — services.css
+   ============================================================ */
+
+/* ─── PRICING GRID ────────────────────────────────────────── */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s4);
+  margin-top: var(--s6);
+  align-items: start;
+}
+.pricing-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--s5) var(--s4);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--ease);
+  position: relative;
+}
+.pricing-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+.pricing-card.featured {
+  border-color: var(--blue-dark);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.03);
+}
+.pricing-card.featured:hover {
+  transform: scale(1.03) translateY(-4px);
+}
+.featured-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blue-dark);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.pricing-icon {
+  font-size: 2rem;
+  margin-bottom: var(--s3);
+}
+.pricing-name {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  margin-bottom: var(--s1);
+}
+.pricing-price {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: var(--blue-dark);
+  line-height: 1;
+}
+.pricing-period {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: var(--s4);
+  margin-top: 4px;
+}
+.pricing-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: var(--s3) 0;
+}
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
+}
+.pricing-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-body);
+}
+.pricing-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ─── FREE RESOURCES ──────────────────────────────────────── */
+.free-section {
+  background: var(--off-white);
+}
+.free-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+  margin-top: var(--s5);
+}
+.free-card {
+  padding: var(--s4);
+}
+.free-icon {
+  font-size: 2rem;
+  margin-bottom: var(--s2);
+}
+.free-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--s1);
+}
+.free-card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: var(--s3);
+}
+.free-tag {
+  display: inline-block;
+  background: #e6f9f1;
+  color: #0a7a45;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ─── HOW IT WORKS ────────────────────────────────────────── */
+.how-it-works {
+  background: var(--blue-light);
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s4);
+  margin-top: var(--s5);
+  position: relative;
+}
+.steps-grid::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+.step-card {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--blue-dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0 auto var(--s3);
+  box-shadow: var(--shadow-md);
+}
+.step-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.step-card p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ─── FAQ ─────────────────────────────────────────────────── */
+.faq-section {
+  background: var(--white);
+}
+.faq-list {
+  max-width: 760px;
+  margin: var(--s5) auto 0;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: var(--s3) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color var(--ease);
+}
+.faq-question:hover {
+  color: var(--blue-dark);
+}
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all var(--ease);
+}
+.faq-item.open .faq-icon {
+  background: var(--blue-dark);
+  color: white;
+  transform: rotate(45deg);
+}
+.faq-answer {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.8;
+  padding-bottom: var(--s3);
+  display: none;
+}
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* ─── CTA BANNER ──────────────────────────────────────────── */
+.services-cta {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, #003a75 100%);
+  padding: var(--s7) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.services-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.services-cta .container {
+  position: relative;
+}
+.services-cta h2 {
+  color: white;
+  margin-bottom: var(--s2);
+}
+.services-cta p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 500px;
+  margin: 0 auto var(--s5);
+}
+.services-cta-btns {
+  display: flex;
+  gap: var(--s2);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing-card.featured {
+    transform: none;
+  }
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps-grid::before {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .free-grid {
+    grid-template-columns: 1fr;
+  }
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}

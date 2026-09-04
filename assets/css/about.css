@@ -1,0 +1,222 @@
+/* ============================================================
+   ABOUT PAGE — about.css
+   ============================================================ */
+
+/* ─── BIO SECTION ─────────────────────────────────────────── */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--s7);
+  align-items: start;
+}
+
+/* Sticky sidebar */
+.about-sidebar {
+  position: sticky;
+  top: 100px;
+}
+.profile-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--s5);
+  text-align: center;
+}
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  border: 4px solid var(--border);
+  margin: 0 auto var(--s3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+.profile-name {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.profile-title {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: var(--s4);
+  line-height: 1.6;
+}
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+}
+.profile-link {
+  display: block;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--text-body);
+  transition: all var(--ease);
+  font-weight: 500;
+}
+.profile-link:hover {
+  border-color: var(--blue-dark);
+  color: var(--blue-dark);
+  background: var(--blue-light);
+}
+
+/* ─── MAIN BODY ───────────────────────────────────────────── */
+.about-body h2 {
+  font-size: 1.8rem;
+  margin-bottom: var(--s3);
+  margin-top: var(--s6);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--border);
+}
+.about-body h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.about-body p {
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: var(--s2);
+}
+
+/* ─── TIMELINE ────────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: var(--s4);
+  position: relative;
+}
+.timeline-item {
+  display: flex;
+  gap: var(--s3);
+  position: relative;
+  padding-bottom: var(--s4);
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+.timeline-year {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--blue-dark);
+  border: 3px solid var(--blue-light);
+  flex-shrink: 0;
+}
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 4px;
+}
+.timeline-item:last-child .timeline-line {
+  display: none;
+}
+
+.timeline-content {
+  padding-bottom: var(--s2);
+  padding-top: 2px;
+}
+.timeline-content h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+.timeline-content p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ─── VALUES GRID ─────────────────────────────────────────── */
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s3);
+  margin-top: var(--s4);
+}
+.value-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  transition: all var(--ease);
+}
+.value-card:hover {
+  border-color: var(--blue-dark);
+  box-shadow: var(--shadow-sm);
+}
+.value-card h4 {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.value-card p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── CTA STRIP ───────────────────────────────────────────── */
+.about-cta {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, #003a75 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--s5);
+  text-align: center;
+  margin-top: var(--s6);
+}
+.about-cta h3 {
+  color: white;
+  margin-bottom: var(--s2);
+}
+.about-cta p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: var(--s4);
+  font-size: 0.95rem;
+}
+.about-cta-btns {
+  display: flex;
+  gap: var(--s2);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+  .about-sidebar {
+    position: static;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

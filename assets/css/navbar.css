@@ -1,0 +1,204 @@
+/* ============================================================
+   NAVBAR — navbar.css
+   Fixed top navigation bar styles.
+   ============================================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--ease);
+}
+.navbar.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.navbar-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 var(--s4);
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ─── LOGO ────────────────────────────────────────────────── */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  text-decoration: none;
+}
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  background: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: var(--font-head);
+  flex-shrink: 0;
+}
+.logo-text {
+  line-height: 1.2;
+}
+.logo-name {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.logo-title {
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* ─── LINKS ───────────────────────────────────────────────── */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  list-style: none;
+}
+.navbar-links a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-body);
+  border-radius: var(--radius);
+  transition: all var(--ease);
+}
+.navbar-links a:hover {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+.navbar-links a.active {
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+
+/* ─── ACTIONS ─────────────────────────────────────────────── */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* ─── MOBILE TOGGLE ───────────────────────────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all var(--ease);
+}
+
+/* ─── MOBILE MENU ─────────────────────────────────────────── */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  padding: var(--s2) var(--s3) var(--s3);
+  flex-direction: column;
+  gap: 4px;
+}
+.mobile-menu.open {
+  display: flex;
+}
+.mobile-menu a {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-body);
+  border-radius: var(--radius);
+  transition: all var(--ease);
+}
+.mobile-menu a:hover {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+.mobile-menu .btn {
+  margin-top: var(--s1);
+  width: 100%;
+  justify-content: center;
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-inner {
+    padding: 0 var(--s3);
+    gap: var(--s2);
+  }
+  .navbar-logo {
+    min-width: 0;
+    flex: 1;
+  }
+  .logo-text {
+    min-width: 0;
+  }
+  .logo-name {
+    font-size: 0.86rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .logo-title {
+    display: none;
+  }
+  .navbar-actions {
+    margin-left: auto;
+    gap: var(--s1);
+  }
+  .navbar-actions > .btn {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .mobile-menu a.btn.btn-primary {
+    color: var(--white);
+  }
+}
+@media (max-width: 768px) {
+  .navbar-inner {
+    padding: 0 var(--s3);
+  }
+}
+@media (max-width: 480px) {
+  .navbar-inner {
+    padding: 0 var(--s2);
+  }
+  .logo-name {
+    font-size: 0.8rem;
+  }
+}

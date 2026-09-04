@@ -1,0 +1,45 @@
+/* ============================================================
+   DESIGN SYSTEM — variables.css
+   All design tokens used across the entire project.
+   Import this file first in every other CSS file.
+   ============================================================ */
+
+:root {
+  /* ─── COLORS ─────────────────────────────────────────────── */
+  --blue-dark: #0057a8; /* primary CTA, links       */
+  --blue-mid: #1976d2; /* hover states             */
+  --blue-light: #e8f1fb; /* section backgrounds      */
+  --sky: #00a3e0; /* accent highlights        */
+  --white: #ffffff;
+  --off-white: #f5f8fc;
+  --text: #1a1a2e; /* headings                 */
+  --text-body: #3d4a5c; /* body copy                */
+  --muted: #64748b; /* labels, captions         */
+  --border: #d6e4f5; /* dividers, card borders   */
+
+  /* ─── TYPOGRAPHY ─────────────────────────────────────────── */
+  --font-head: 'Merriweather', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* ─── SPACING (8px grid) ─────────────────────────────────── */
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 32px;
+  --s5: 48px;
+  --s6: 64px;
+  --s7: 96px;
+  --s8: 128px;
+
+  /* ─── BORDERS ────────────────────────────────────────────── */
+  --radius: 6px;
+  --radius-lg: 12px;
+
+  /* ─── SHADOWS ────────────────────────────────────────────── */
+  --shadow-sm: 0 1px 4px rgba(0, 87, 168, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 87, 168, 0.12);
+  --shadow-lg: 0 12px 40px rgba(0, 87, 168, 0.16);
+
+  /* ─── TRANSITIONS ────────────────────────────────────────── */
+  --ease: 0.25s ease;
+}
